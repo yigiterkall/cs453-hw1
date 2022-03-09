@@ -46,7 +46,7 @@ jobs:
         uses: pypa/gh-action-pypi-publish@master
         with:
           user: __token__
-          password: ${{ secrets.SECRET_TOKEN }}
+          password: ${{secrets.SECRET_TOKEN}}
 
             
 
