@@ -1,11 +1,12 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     # TODO: Write a globally unique name which will be listed on PyPI
     name="yigiterkall/cs453-hw1",
     author="Yigit Erkal",  # TODO: Write your name
     version="2.0.0",
-    packages=["dictionary"],
+    description="basic",
+    packages=find_packages(),
     install_requires=[
         "requests>=2.23.0",
     ],
