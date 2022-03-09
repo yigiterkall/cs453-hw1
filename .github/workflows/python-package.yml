@@ -34,11 +34,12 @@ jobs:
   job2:
       needs: [job1]
       runs-on: ubuntu-latest
+      if: ${{ github.event_name == 'push' }}
       steps:
       - name: Test with pytest
         run: |
             pip install build
             python -m build
-            python setup.py install
+
       
         
