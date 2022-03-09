@@ -1,5 +1,5 @@
-# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+# Yigit Erkal
+# 21601521
 
 name: Python package
 
@@ -24,9 +24,8 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: pytest and pip installation
       run: |
-        python -m pip install --upgrade pip
         python -m pip install pytest
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        pip install -r requirements.txt
         pytest
       
   build-publish:
