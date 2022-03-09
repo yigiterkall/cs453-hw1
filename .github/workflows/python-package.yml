@@ -38,7 +38,7 @@ jobs:
       steps:
       - name: Build package
         run: |
-              cd cs453-hw1
+              cd..
               pip install build
               python -m build
 
