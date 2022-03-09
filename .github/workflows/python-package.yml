@@ -39,6 +39,7 @@ jobs:
       - name: Build package
         run: |
               pip install build
+              touch pyproject.toml
               python -m build
 
             
