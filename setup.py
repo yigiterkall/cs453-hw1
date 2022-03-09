@@ -15,6 +15,4 @@ setup(
         "requests>=2.23.0",
     ],
     python_requires=">=3.8",
-    package_dir={'': 'dictionary'},
-    packages=find_packages(where='dictionary'),
 )
