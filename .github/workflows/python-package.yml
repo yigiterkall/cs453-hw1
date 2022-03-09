@@ -40,7 +40,6 @@ jobs:
         run: |
               pip install build
               touch pyproject.toml
-              touch setup.py
               python -m build
        
       - name: Publish distribution 📦 to PyPI
