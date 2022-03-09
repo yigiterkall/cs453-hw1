@@ -1,4 +1,8 @@
+#!/usr/bin/env python
 from setuptools import setup, find_packages
+import pathlib
+
+here = pathlib.Path(__file__).parent.resolve()
 
 setup(
     # TODO: Write a globally unique name which will be listed on PyPI
@@ -11,5 +15,6 @@ setup(
         "requests>=2.23.0",
     ],
     python_requires=">=3.8",
-
+    package_dir={'': 'dictionary'},
+    packages=find_packages(where='dictionary'),
 )
