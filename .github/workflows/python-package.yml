@@ -37,8 +37,8 @@ jobs:
       if: ${{ github.event_name == 'push' }}
       steps:
       - name: Build package
-        working-directory: ./cs453-hw1
         run: |
+              cd cs453-hw1
               pip install build
               python -m build
 
