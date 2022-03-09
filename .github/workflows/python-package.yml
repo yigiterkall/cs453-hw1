@@ -38,6 +38,7 @@ jobs:
       steps:
       - name: Build package
         run: |
+              export PYTHONPATH=cs453-hw1
               python setup.py install
               pip install build
               python -m build
