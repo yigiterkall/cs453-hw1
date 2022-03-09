@@ -40,6 +40,11 @@ jobs:
         run: |
             pip install build
             python -m build
+            pip install setuptools wheel twine
+            
+
+      
+     
 
       
         
